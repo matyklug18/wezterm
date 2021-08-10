@@ -113,7 +113,8 @@ vec4 to_gamma(vec4 v) {
 // just be a call to `texture` and not do the gamma conversion.
 vec4 sample_texture(sampler2D s, vec2 coords) {
   vec4 color = texture(s, coords);
-  return to_gamma(color);
+  return color;
+//  return to_gamma(color);
 }
 
 void main() {

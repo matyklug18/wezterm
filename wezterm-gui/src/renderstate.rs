@@ -157,7 +157,7 @@ impl RenderState {
             let source = glium::program::ProgramCreationInput::SourceCode {
                 vertex_shader: &vertex_shader,
                 fragment_shader: &fragment_shader,
-                outputs_srgb: true,
+                outputs_srgb: false,
                 tessellation_control_shader: None,
                 tessellation_evaluation_shader: None,
                 transform_feedback_varyings: None,
